@@ -1,10 +1,20 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
+import Create from '../pages/create/create';
+import Home from "../pages/home/home";
+import Edit from "../pages/edit/edit";
 
 const AppRouter = createBrowserRouter([
   {
-    path: "/app",
-    element: <App />,
+    path: "/create",
+    element: <Create />,
+  },
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/edit/:bookId",
+    element: <Edit />,
   },
 ]);
 
