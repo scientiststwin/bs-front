@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        syne: ['Syne', 'sans-serif'],
+        unica: ['Unica One', 'sans-serif'],
+      },
       colors: {
         blue: {
           500: '#3AB8EB',
